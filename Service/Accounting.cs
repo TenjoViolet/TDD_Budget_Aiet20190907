@@ -23,9 +23,9 @@ namespace TDD_BudgetApp.Service
             decimal tottalAmount = 0;
             foreach (var budget in budgets)
             {
-                //var budget = budgets.FirstOrDefault();
+                
                 tottalAmount+= budget.OverlappingAmount(period);
-                //return budget.OverlappingAmount(period);
+
             }
 
             return tottalAmount;
